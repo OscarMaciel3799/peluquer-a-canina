@@ -1,5 +1,5 @@
 
-package logica;
+package com.mycompany.peluqueriacanina.igu;
 
 public class VerDatos extends javax.swing.JFrame {
 
