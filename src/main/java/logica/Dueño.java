@@ -1,8 +1,10 @@
 package logica;
+import java.util.LinkedList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Dueño {
@@ -11,6 +13,10 @@ public class Dueño {
     private int id_dueño;
     private String nombre;
     private String celDueño;
+    
+    @OneToMany (mappedBy = "unDueño")
+    private LinkedList<Mascota> listaMascota;
+    
 
     public Dueño() {
     }
