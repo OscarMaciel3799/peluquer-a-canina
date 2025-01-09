@@ -2,6 +2,8 @@
 package com.mycompany.peluqueriacanina.igu;
 
 import java.util.List;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import logica.ControladoraLogica;
 import logica.Mascota;
@@ -133,9 +135,39 @@ public class VerDatos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblEliminarActionPerformed
-        // TODO add your handling code here:
+        //Controlamos que la tabla no este vacia
+        if(tablaMascotas.getRowCount()>0){
+            //Controlo que se haya seleccionado una mascota
+            if(tablaMascotas.getSelectedRow()!=-1){
+                //Buscamos el id de la mascota a eliminar
+                int num_cliente = Integer.parseInt(String.valueOf(tablaMascotas.getValueAt(tablaMascotas.getSelectedRow(),0)));
+                //Llamo al metodo borrar
+                control.borrarMascota(num_cliente);
+                
+                //Aviso al usuario
+                 mostrarMensaje("Mascota eliminada correctamente", "info", "Borrado de Mascota");
+            }
+            mostrarMensaje("No selecciono ninguna mascota", "error", "Error al eliminar");
+        }else{
+            mostrarMensaje("No hay nada para eliminar en la tabla", "error", "Error al eliminar");
+        }
     }//GEN-LAST:event_lblEliminarActionPerformed
-
+   
+//Creamos un Metodo que traiga un JOptionPane para mostrar un mensaje
+    public void mostrarMensaje(String mensaje,String tipo, String titulo){
+        JOptionPane optionPane=new JOptionPane(mensaje);
+        if(tipo.equals("info")){
+            optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        }else if(tipo.equals("error")){
+            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+        JDialog dialog=optionPane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+   }
+    
+    
+    
     private void lblEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblEditarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_lblEditarActionPerformed

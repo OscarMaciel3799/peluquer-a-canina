@@ -2,6 +2,8 @@ package logica;
 
 import com.mycompany.peluqueriacanina.persistencia.ControladoraPersistencia;
 import java.util.List;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 
 public class ControladoraLogica {
@@ -29,10 +31,21 @@ public class ControladoraLogica {
         
         //Los guardamos en la base de datos
         controlPersis.guardar(dueño,mascota);
+        
+        //Creamos un JOptionPane para mostrar un mensaje de exito
+        JOptionPane optionPane=new JOptionPane("Se guardó correctamente");
+        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog=optionPane.createDialog("Guardado Exitoso");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
     }
 
     public List<Mascota> traerMascotas() {
         return controlPersis.traerMascotas();
+    }
+
+    public void borrarMascota(int num_cliente) {
+        controlPersis.borrarMascota(num_cliente);
     }
 
     
