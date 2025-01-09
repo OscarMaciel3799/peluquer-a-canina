@@ -1,6 +1,7 @@
 
 package com.mycompany.peluqueriacanina.igu;
 
+import javax.swing.JFrame;
 import logica.ControladoraLogica;
 
 
@@ -10,6 +11,8 @@ public class CargaDatos extends javax.swing.JFrame {
     
     public CargaDatos() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setResizable(false);
     }
 
     

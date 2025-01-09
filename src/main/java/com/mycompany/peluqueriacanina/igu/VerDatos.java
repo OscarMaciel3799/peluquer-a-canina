@@ -3,6 +3,7 @@ package com.mycompany.peluqueriacanina.igu;
 
 import java.util.List;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import logica.ControladoraLogica;
@@ -14,6 +15,8 @@ public class VerDatos extends javax.swing.JFrame {
     
     public VerDatos() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setResizable(false);
     }
 
     @SuppressWarnings("unchecked")
