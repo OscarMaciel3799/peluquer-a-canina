@@ -108,6 +108,7 @@ public class CargaDatos extends javax.swing.JFrame {
         jLabel11.setMinimumSize(new java.awt.Dimension(719, 750));
 
         txtNombre.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombre.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombreActionPerformed(evt);
@@ -115,6 +116,7 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         txtRaza.setBackground(new java.awt.Color(255, 255, 255));
+        txtRaza.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtRaza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRazaActionPerformed(evt);
@@ -122,6 +124,7 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         txtColor.setBackground(new java.awt.Color(255, 255, 255));
+        txtColor.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtColorActionPerformed(evt);
@@ -129,6 +132,7 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         txtNomDueño.setBackground(new java.awt.Color(255, 255, 255));
+        txtNomDueño.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtNomDueño.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomDueñoActionPerformed(evt);
@@ -136,6 +140,7 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         txtCelDueño.setBackground(new java.awt.Color(255, 255, 255));
+        txtCelDueño.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtCelDueño.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCelDueñoActionPerformed(evt);
@@ -143,15 +148,18 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         cmbAlergia.setBackground(new java.awt.Color(255, 255, 255));
+        cmbAlergia.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         cmbAlergia.setForeground(new java.awt.Color(0, 0, 0));
         cmbAlergia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Si", "No" }));
 
         cmbAtEsp.setBackground(new java.awt.Color(255, 255, 255));
+        cmbAtEsp.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         cmbAtEsp.setForeground(new java.awt.Color(0, 0, 0));
         cmbAtEsp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Si", "No" }));
 
         txtObservaciones.setBackground(new java.awt.Color(255, 255, 255));
         txtObservaciones.setColumns(20);
+        txtObservaciones.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         txtObservaciones.setRows(5);
         jScrollPane1.setViewportView(txtObservaciones);
 
