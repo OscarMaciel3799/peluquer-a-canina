@@ -297,7 +297,8 @@ public class CargaDatos extends javax.swing.JFrame {
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreActionPerformed
-
+    
+    //Creamos un metodo para limpiar las pantalla al presionar el boton LIMPIAR
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtNombre.setText("");
         txtRaza.setText("");
@@ -308,7 +309,8 @@ public class CargaDatos extends javax.swing.JFrame {
         txtCelDueño.setText("");
         txtObservaciones.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
+    
+//Creamos un metodo para guardar la informacion en la Base de Datos
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String nombreMasco=txtNombre.getText();
         String raza=txtRaza.getText();

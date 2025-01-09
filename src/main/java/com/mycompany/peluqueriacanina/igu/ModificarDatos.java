@@ -309,7 +309,9 @@ public class ModificarDatos extends javax.swing.JFrame {
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreActionPerformed
-
+    
+    
+    //Creamos un metodo para limpiar las pantalla al presionar el boton LIMPIAR
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtNombre.setText("");
         txtRaza.setText("");
@@ -334,6 +336,7 @@ public class ModificarDatos extends javax.swing.JFrame {
         dialog.setVisible(true);
     }
     
+    //Creamos un metodo para guardar la informacion en la Base de Datos
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String nombreMasco=txtNombre.getText();
         String raza=txtRaza.getText();
@@ -344,6 +347,7 @@ public class ModificarDatos extends javax.swing.JFrame {
         String celDueño=txtCelDueño.getText();
         String observaciones=txtObservaciones.getText();
         
+        //LLamamos a la logica para que modifique los datos
         control.modificarDatos(mascota,nombreMasco,raza,color,alergia,atenEsp,nombreDueño,celDueño,observaciones);
         
         //Aviso al usuario

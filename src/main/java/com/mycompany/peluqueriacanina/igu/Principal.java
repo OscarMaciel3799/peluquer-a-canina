@@ -117,20 +117,23 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Llamamos a la pantalla VerDatos desde el boton Ver Datos
     private void btnVerDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDatosActionPerformed
         VerDatos pantalla=new VerDatos();
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_btnVerDatosActionPerformed
-
+    
+    //Llamamos a la pantalla CargarDatos desde el boton Cargar Datos
     private void btnCargarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarDatosActionPerformed
         CargaDatos pantalla=new CargaDatos();
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnCargarDatosActionPerformed
-
+    
+    //Llamamos a dispose para cerrar la pantalla al usar el boton SALIR
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnSalirActionPerformed

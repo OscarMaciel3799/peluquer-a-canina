@@ -146,7 +146,8 @@ public class VerDatos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Creamos un metodo para eliminar la informacion de la mascota seleccionada
     private void lblEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblEliminarActionPerformed
         //Controlamos que la tabla no este vacia
         if(tablaMascotas.getRowCount()>0){
@@ -183,7 +184,7 @@ public class VerDatos extends javax.swing.JFrame {
     }
     
     
-    
+    //Creamos un metodo para editar la informacion de la mascota seleccionada
     private void lblEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblEditarActionPerformed
         if(tablaMascotas.getRowCount()>0){
             //Controlo que se haya seleccionado una mascota
