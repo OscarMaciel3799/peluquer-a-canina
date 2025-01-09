@@ -322,6 +322,14 @@ public class CargaDatos extends javax.swing.JFrame {
         String observaciones=txtObservaciones.getText();
         
         control.guardarDatos(nombreMasco,raza,color,alergia,atenEsp,nombreDueño,celDueño,observaciones);
+        
+        //Volvemos a cargar la pantalla de ver datos
+        VerDatos pantalla=new VerDatos();
+        pantalla.setVisible(true);
+        pantalla.setLocationRelativeTo(null);
+        
+        //Cerramos la ventana de edicion
+        this.dispose();
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     

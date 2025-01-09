@@ -38,6 +38,7 @@ public class ControladoraLogica {
         JDialog dialog=optionPane.createDialog("Guardado Exitoso");
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
+        
     }
 
     public List<Mascota> traerMascotas() {
