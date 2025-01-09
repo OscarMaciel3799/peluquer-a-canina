@@ -46,51 +46,65 @@ public class CargaDatos extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Stencil", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(35, 187, 193));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Carga de datos");
 
+        lblNombre.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(0, 0, 0));
         lblNombre.setText("Nombre:");
 
+        lblColor.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblColor.setForeground(new java.awt.Color(0, 0, 0));
         lblColor.setText("Color:");
 
+        lblRaza.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblRaza.setForeground(new java.awt.Color(0, 0, 0));
         lblRaza.setText("Raza:");
 
+        lblAlergico.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblAlergico.setForeground(new java.awt.Color(0, 0, 0));
         lblAlergico.setText("Alérgico:");
 
+        lblNomDueño.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblNomDueño.setForeground(new java.awt.Color(0, 0, 0));
         lblNomDueño.setText("Nombre Dueño:");
 
+        lblAtEsp.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblAtEsp.setForeground(new java.awt.Color(0, 0, 0));
         lblAtEsp.setText("Atencion Especial:");
 
+        lblObservaciones.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblObservaciones.setForeground(new java.awt.Color(0, 0, 0));
         lblObservaciones.setText("Observaciones:");
 
+        lblCelDueño.setFont(new java.awt.Font("Stencil", 0, 12)); // NOI18N
         lblCelDueño.setForeground(new java.awt.Color(0, 0, 0));
         lblCelDueño.setText("Cel. Dueño:");
 
+        btnGuardar.setBackground(new java.awt.Color(35, 187, 193));
         btnGuardar.setFont(new java.awt.Font("Stencil", 1, 14)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setText("guardar");
+        btnGuardar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
             }
         });
 
+        btnLimpiar.setBackground(new java.awt.Color(35, 187, 193));
         btnLimpiar.setFont(new java.awt.Font("Stencil", 1, 14)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setText("limpiar");
+        btnLimpiar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLimpiarActionPerformed(evt);
             }
         });
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("D:\\Users\\Oscar\\Downloads\\logo.PNG")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon("D:\\Users\\Oscar\\Downloads\\peluqueria-logo.png")); // NOI18N
         jLabel11.setMinimumSize(new java.awt.Dimension(719, 750));
 
         txtNombre.setBackground(new java.awt.Color(255, 255, 255));
