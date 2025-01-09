@@ -156,7 +156,7 @@ public class VerDatos extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_lblEliminarActionPerformed
    
-//Creamos un Metodo que traiga un JOptionPane para mostrar un mensaje
+    //Creamos un Metodo que traiga un JOptionPane para mostrar un mensaje
     public void mostrarMensaje(String mensaje,String tipo, String titulo){
         JOptionPane optionPane=new JOptionPane(mensaje);
         if(tipo.equals("info")){
@@ -167,7 +167,7 @@ public class VerDatos extends javax.swing.JFrame {
         JDialog dialog=optionPane.createDialog(titulo);
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
-   }
+    }
     
     
     
@@ -182,15 +182,13 @@ public class VerDatos extends javax.swing.JFrame {
                 pantallamodif.setVisible(true);
                 pantallamodif.setLocationRelativeTo(null);
                 
-                //Aviso al usuario
-                 mostrarMensaje("Mascota eliminada correctamente", "info", "Borrado de Mascota");
-                 cargarTabla();
+                this.dispose();
             }else{
-               mostrarMensaje("No selecciono ninguna mascota", "error", "Error al eliminar"); 
+               mostrarMensaje("No selecciono ninguna mascota", "error", "Error al editar"); 
             }
             
         }else{
-            mostrarMensaje("No hay nada para eliminar en la tabla", "error", "Error al eliminar");
+            mostrarMensaje("No hay nada para editar en la tabla", "error", "Error al editar");
         }
     }//GEN-LAST:event_lblEditarActionPerformed
 
