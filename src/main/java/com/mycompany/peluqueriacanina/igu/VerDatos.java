@@ -146,8 +146,11 @@ public class VerDatos extends javax.swing.JFrame {
                 
                 //Aviso al usuario
                  mostrarMensaje("Mascota eliminada correctamente", "info", "Borrado de Mascota");
+                 cargarTabla();
+            }else{
+               mostrarMensaje("No selecciono ninguna mascota", "error", "Error al eliminar"); 
             }
-            mostrarMensaje("No selecciono ninguna mascota", "error", "Error al eliminar");
+            
         }else{
             mostrarMensaje("No hay nada para eliminar en la tabla", "error", "Error al eliminar");
         }
@@ -169,7 +172,26 @@ public class VerDatos extends javax.swing.JFrame {
     
     
     private void lblEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblEditarActionPerformed
-        // TODO add your handling code here:
+        if(tablaMascotas.getRowCount()>0){
+            //Controlo que se haya seleccionado una mascota
+            if(tablaMascotas.getSelectedRow()!=-1){
+                //Buscamos el id de la mascota que se desea editar
+                int num_cliente = Integer.parseInt(String.valueOf(tablaMascotas.getValueAt(tablaMascotas.getSelectedRow(),0)));
+                
+                ModificarDatos pantallamodif= new ModificarDatos(num_cliente);
+                pantallamodif.setVisible(true);
+                pantallamodif.setLocationRelativeTo(null);
+                
+                //Aviso al usuario
+                 mostrarMensaje("Mascota eliminada correctamente", "info", "Borrado de Mascota");
+                 cargarTabla();
+            }else{
+               mostrarMensaje("No selecciono ninguna mascota", "error", "Error al eliminar"); 
+            }
+            
+        }else{
+            mostrarMensaje("No hay nada para eliminar en la tabla", "error", "Error al eliminar");
+        }
     }//GEN-LAST:event_lblEditarActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
