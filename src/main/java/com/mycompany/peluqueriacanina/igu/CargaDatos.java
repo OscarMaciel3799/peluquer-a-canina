@@ -7,6 +7,7 @@ import logica.ControladoraLogica;
 public class CargaDatos extends javax.swing.JFrame {
 
     ControladoraLogica control=new ControladoraLogica();
+    
     public CargaDatos() {
         initComponents();
     }

@@ -1,5 +1,6 @@
 package com.mycompany.peluqueriacanina.persistencia;
 
+import java.util.List;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import logica.Dueño;
@@ -24,6 +25,10 @@ public class ControladoraPersistencia {
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
         
+    }
+
+    public List<Mascota> traerMascotas() {
+        return mascotaJpa.findMascotaEntities();
     }
     
     
