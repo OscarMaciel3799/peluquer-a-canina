@@ -1,10 +1,12 @@
 
 package com.mycompany.peluqueriacanina.igu;
 
+import logica.ControladoraLogica;
+
 
 public class CargaDatos extends javax.swing.JFrame {
 
-    
+    ControladoraLogica control=new ControladoraLogica();
     public CargaDatos() {
         initComponents();
     }
@@ -282,7 +284,16 @@ public class CargaDatos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        // TODO add your handling code here:
+        String nombreMasco=txtNombre.getText();
+        String raza=txtRaza.getText();
+        String color=txtColor.getText();
+        String alergia=(String) cmbAlergia.getSelectedItem();
+        String atenEsp=(String) cmbAtEsp.getSelectedItem();
+        String nombreDueño=txtNomDueño.getText();
+        String celDueño=txtCelDueño.getText();
+        String observaciones=txtObservaciones.getText();
+        
+        control.guardarDatos(nombreMasco,raza,color,alergia,atenEsp,nombreDueño,celDueño,observaciones);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     

@@ -1,4 +1,5 @@
 package logica;
+import java.io.Serializable;
 import java.util.LinkedList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Dueño {
+public class Dueño implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_dueño;
